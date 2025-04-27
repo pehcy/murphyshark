@@ -47,6 +47,21 @@ body {
     font-weight: 900;
 }
 
+.token.deleted {
+	background-color: hsl(350deg 100% 88% / 47%);
+}
+.token.inserted {
+	background-color: hsl(120deg 73% 75% / 35%);
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
 /*
 .acrylic {
     background: rgba(255, 255, 255, 0.5);

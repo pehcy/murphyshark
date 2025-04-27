@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"static/js": "static/js"});
     eleventyConfig.addPassthroughCopy({"static/img": "static/img"});
     eleventyConfig.addPassthroughCopy({"static/resume.pdf": "static/resume.pdf"});
+    eleventyConfig.addPassthroughCopy({"static/notes": "static/notes"});
     eleventyConfig.addPassthroughCopy({"robots.txt": "robots.txt"});
 
     eleventyConfig.addLayoutAlias("default", "layouts/default.liquid");
